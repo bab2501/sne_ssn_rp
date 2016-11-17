@@ -1,2 +1,2 @@
-# sne_ssn_rp
-SSN RP - Security within costumer printe
+# SSN RP - Security within costumer printe
+In almost every cooperate environment printers are used to print documents. These document can consist of personal or sensitive information. Therefore, printers are a very interesting target for attackers that want to steal is personal or sensitive documents. Attackers can use multiple types of attacks or approaches in order to extract these documents. It might be possible to eavesdrops the communication between clients and printers. It could be possible to extract these documents by analyzing the network traffic between a client and the printer device. This project aims to find and investigate possible floors in the network traffic that were generated during a print job. 
