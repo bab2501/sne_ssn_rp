@@ -1,0 +1,115 @@
+Scan all 65535 ports						nmap -p- 192.168.223.1
+Starting Nmap 7.31 ( https://nmap.org ) at 2016-11-21 14:50 W. Europe Standard Time
+Nmap scan report for 192.168.223.1
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Host is up (0.0029s latency).
+Not shown: 65526 closed ports
+PORT      STATE SERVICE
+80/tcp    open  http
+443/tcp   open  https
+631/tcp   open  ipp
+3910/tcp  open  prnrequest
+3911/tcp  open  prnstatus
+8080/tcp  open  http-proxy
+9100/tcp  open  jetdirect
+9220/tcp  open  unknown
+53048/tcp open  unknown
+MAC Address: 98:E7:F4:C2:F3:59 (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 467.40 seconds
+
+
+=========================================================================================================================================================
+Detect OS and Services						nmap -A 192.168.223.1
+Starting Nmap 7.31 ( https://nmap.org ) at 2016-11-21 15:00 W. Europe Standard Time
+Nmap scan report for 192.168.223.1
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Host is up (0.040s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE    VERSION
+80/tcp   open  http       HP DeskJet 3630 series printer http config (Serial CN69C3H5TF067P)
+| http-methods: 
+|_  Potentially risky methods: PUT DELETE
+|_http-server-header: HP HTTP Server; HP DeskJet 3630 series - K4T99B; Serial Number: CN69C3H5TF067P; Built:Mon Oct 26, 2015 10:09:57AM {SWP1FN1544AR}
+|_http-title: Site doesn't have a title (text/html).
+443/tcp  open  ssl/http   HP DeskJet 3630 series printer http config (Serial CN69C3H5TF067P)
+631/tcp  open  http       HP DeskJet 3630 series printer http config (Serial CN69C3H5TF067P)
+| http-methods: 
+|_  Potentially risky methods: PUT DELETE
+|_http-server-header: HP HTTP Server; HP DeskJet 3630 series - K4T99B; Serial Number: CN69C3H5TF067P; Built:Mon Oct 26, 2015 10:09:57AM {SWP1FN1544AR}
+8080/tcp open  http       HP DeskJet 3630 series printer http config (Serial CN69C3H5TF067P)
+| http-methods: 
+|_  Potentially risky methods: PUT DELETE
+|_http-server-header: HP HTTP Server; HP DeskJet 3630 series - K4T99B; Serial Number: CN69C3H5TF067P; Built:Mon Oct 26, 2015 10:09:57AM {SWP1FN1544AR}
+|_http-title: Site doesn't have a title (text/html).
+9100/tcp open  jetdirect?
+9220/tcp open  hp-gsg     HP Generic Scan Gateway 1.0
+MAC Address: 98:E7:F4:C2:F3:59 (Unknown)
+Device type: specialized|printer
+Running: Brother embedded
+OS CPE: cpe:/h:brother:ads-2600w cpe:/h:brother:hl-3170cdw
+OS details: Brother ADS-2600W scanner or HL-3170CDW printer
+Network Distance: 1 hop
+Service Info: Device: printer; CPE: cpe:/h:hp:deskjet_3630_series
+
+
+=========================================================================================================================================================
+Gather page titles from HTTP services		nmap --script=http-title 192.168.223.1/32
+Starting Nmap 7.31 ( https://nmap.org ) at 2016-11-21 15:10 W. Europe Standard Time
+Nmap scan report for 192.168.223.1
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Host is up (0.0085s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+80/tcp   open  http
+| http-headers: 
+|   Server: HP HTTP Server; HP DeskJet 3630 series - K4T99B; Serial Number: CN69C3H5TF067P; Built:Mon Oct 26, 2015 10:09:57AM {SWP1FN1544AR}
+|   Content-Encoding: gzip
+|   Content-Type: text/html
+|   Last-Modified: Mon, 26 Oct 2015 10:09:57 GMT
+|   Cache-Control: max-age=0
+|   Set-Cookie: sid=sf7d41688-996ea3a54fc5b6d53cf53f9bf15d5ace;path=/;
+|   X-Frame-Options: SAMEORIGIN
+|   X-UA-Compatible: IE=edge
+|   X-Content-Type-Options: nosniff
+|   Content-Language: en
+|   Content-Length: 667
+|   
+|_  (Request type: HEAD)
+443/tcp  open  https
+| http-headers: 
+|_  (Request type: GET)
+631/tcp  open  ipp
+| http-headers: 
+|_  (Request type: GET)
+8080/tcp open  http-proxy
+| http-headers: 
+|   Server: HP HTTP Server; HP DeskJet 3630 series - K4T99B; Serial Number: CN69C3H5TF067P; Built:Mon Oct 26, 2015 10:09:57AM {SWP1FN1544AR}
+|   Content-Encoding: gzip
+|   Content-Type: text/html
+|   Last-Modified: Mon, 26 Oct 2015 10:09:57 GMT
+|   Cache-Control: max-age=0
+|   Set-Cookie: sid=s8ada64d0-8115773456c0d4ebedfe24d3bf98678c;path=/;
+|   X-Frame-Options: SAMEORIGIN
+|   X-UA-Compatible: IE=edge
+|   X-Content-Type-Options: nosniff
+|   Content-Language: en
+|   Content-Length: 667
+|   
+|_  (Request type: HEAD)
+9100/tcp open  jetdirect
+9220/tcp open  unknown
+MAC Address: 98:E7:F4:C2:F3:59 (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 25.29 seconds
+
+
+=========================================================================================================================================================
+
+
+
+
+=========================================================================================================================================================
+=========================================================================================================================================================
+=========================================================================================================================================================
+=========================================================================================================================================================
