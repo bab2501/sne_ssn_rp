@@ -1,13 +1,19 @@
 import socket
 
-TCP_IP = '127.0.0.1'
-TCP_PORT = 5005
-BUFFER_SIZE = 1024
-MESSAGE = "NOOP"
-
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect((TCP_IP, TCP_PORT))
-s.send(MESSAGE)
-data = s.recv(BUFFER_SIZE)
-s.close()
-print "received data:", data
+print "Socket Created"
+port = 9220
+ip = "192.168.223.1"
+
+s.connect ((ip, port))
+print "Socket Connected to HOST on ip "+ ip
+
+reply = ''
+while True:
+    message = "MICK\r\n"
+    reply += s.recv(1024)
+    if '220 HP GGW server (version 1.0) ready' in reply:
+        s.sendall(message)
+        break    
+reply += s.recv(65535)
+print reply
