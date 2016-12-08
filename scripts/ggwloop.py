@@ -10,10 +10,13 @@ print "Socket Connected to HOST on ip "+ ip
 
 reply = ''
 while True:
-    message = "MICK\r\n"
+    message = "OPEN\r\n"
     reply += s.recv(1024)
+    if not reply:
+        break
+    break
     if '220 HP GGW server (version 1.0) ready' in reply:
         s.sendall(message)
         break    
-reply += s.recv(65535)
+#reply += s.recv(65535)
 print reply
