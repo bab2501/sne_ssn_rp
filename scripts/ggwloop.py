@@ -3,7 +3,7 @@ import socket
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 print "Socket Created"
 port = 9220
-ip = "192.168.223.1"
+ip = "192.168.1.120"
 
 s.connect ((ip, port))
 print "Socket Connected to HOST on ip "+ ip
@@ -14,9 +14,9 @@ while True:
     reply += s.recv(1024)
     if not reply:
         break
-    break
+    #break
     if '220 HP GGW server (version 1.0) ready' in reply:
         s.sendall(message)
-        break    
-#reply += s.recv(65535)
-print reply
+        break
+noot= s.recv(65535)
+print noot
