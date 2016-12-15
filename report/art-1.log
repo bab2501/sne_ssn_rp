@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.12)  14 DEC 2016 16:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.14)  15 DEC 2016 13:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -293,7 +293,7 @@ Package scrpage2 Warning: seems you are using a constant headheight.
 (scrpage2)                into the preamble of your document.
 (scrpage2)                A better solution would be to use typearea package.
 
-<jpg.jpg, id=80, 64.0794pt x 23.3673pt>
+<jpg.jpg, id=84, 64.0794pt x 23.3673pt>
 File: jpg.jpg Graphic file (type jpg)
  <use jpg.jpg>
 Package pdftex.def Info: jpg.jpg used on input line 41.
@@ -320,43 +320,44 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout4 = `art-1.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
-[3] [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 149--157
+[3] <testenv.png, id=131, 162.00525pt x 89.133pt>
+File: testenv.png Graphic file (type png)
+ <use testenv.png>
+Package pdftex.def Info: testenv.png used on input line 95.
+(pdftex.def)             Requested size: 172.5pt x 94.90892pt.
+ [4 <./testenv.png>] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 155--163
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--168
+Underfull \hbox (badness 10000) in paragraph at lines 164--174
 
  []
 
 [6] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
  [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
 
 (./art-1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
 Package rerunfilecheck Info: File `art-1.out' has not changed.
-(rerunfilecheck)             Checksum: DCF195F3BA7C711DF9F32B0F22A105F3;1233.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 218.
+(rerunfilecheck)             Checksum: BAFD29E69925766C99C8EE022212C427;1299.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
  ) 
 Here is how much of TeX's memory you used:
- 6343 strings out of 494910
- 93457 string characters out of 6179835
- 191283 words of memory out of 5000000
- 9535 multiletter control sequences out of 15000+600000
+ 6351 strings out of 494910
+ 93565 string characters out of 6179835
+ 192283 words of memory out of 5000000
+ 9540 multiletter control sequences out of 15000+600000
  10017 words of font info for 35 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  29i,10n,28p,746b,386s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -371,10 +372,10 @@ lic/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t10.pfb>
-Output written on art-1.pdf (7 pages, 167290 bytes).
+Output written on art-1.pdf (7 pages, 175384 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 173 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 204 PDF objects out of 1000 (max. 8388607)
+ 179 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

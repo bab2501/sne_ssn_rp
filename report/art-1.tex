@@ -62,10 +62,6 @@ The research question can be divided into multiple sub-questions:
 \item Is it possible to capture the print job and replay the network capture?
 \end{enumerate}
 
-
-For the Proof of Concept a HP deskjet 3630 is bought to perform tests. This printer support wireless networking, which means a local network can be setup to perform tests. This was one of the requirements of the printer from the point of view of ethics. 
-
-
 \section{Methods} 
 In order to answer the research question, we have defined different methods. Every method has a different approach. In the subsection below are the different methods discussed.
 
@@ -93,8 +89,16 @@ Vulnerabilities as well as exposures will be reflected against the printer.
 \section{Experiment} 
 In this chapter we discuss for every method a different experiment. In the subsection below are the different expermiments discussed.
 
-\subsection{Experiment 1: Scan}
+\subsection{Test Environment}
+For the Proof of Concept a HP deskjet 3630 is bought to perform tests. This printer support wireless networking, which means a local network can be setup to perform tests. This was one of the requirements of the printer from the point of view of ethics. A schematic example is given in figure X. We used the environment experiment 1, 2 and 3.
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{testenv.png}\\
+	Figure X: Test Environment
+\end{center}
 
+\subsection{Experiment 1: Scan}
+For the portscan we used NMAP to scan all ports from 0-65000 of the printer. When we found an open port we looked up the portnumber in RFC 1700. Then we tried to confirm this information by setting up a raw session using PUTTY. We prepared a python script below for the unkown services we found.\\
+SCRIPT
 
 \subsection{submExperiment 2: Passive analysis}
 Experiment, Experiment, Experiment, Experiment, Experiment, Experiment, Experiment, Experiment, Experiment, Experiment, Experiment, Experiment, Experiment, Experiment, Experiment, Experiment, Experiment, Experiment,
@@ -131,6 +135,8 @@ Results, Results, Results, Results, Results, Results, Results, Results, Results,
 
 \subsection{sResults 1: Scan}
 trgfd;gkfdlgkjfdgjk
+
+
 
 
 
